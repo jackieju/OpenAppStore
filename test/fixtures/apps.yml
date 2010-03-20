@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  desc: MyString
+  author: MyString
+  regdate: 2010-03-20
+  installnum: 2010-03-20
+  callbackurl: MyString
+  type: 1
+  logourl: MyString
+  language: MyString
+  category: MyString
+  tag: MyString
+  free: 1
+  installcharge: 1
+
+two:
+  name: MyString
+  desc: MyString
+  author: MyString
+  regdate: 2010-03-20
+  installnum: 2010-03-20
+  callbackurl: MyString
+  type: 1
+  logourl: MyString
+  language: MyString
+  category: MyString
+  tag: MyString
+  free: 1
+  installcharge: 1

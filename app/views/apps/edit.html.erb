@@ -1,0 +1,67 @@
+<h1>Editing app</h1>
+
+<% form_for(@app) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :desc %><br />
+    <%= f.text_field :desc %>
+  </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :regdate %><br />
+    <%= f.date_select :regdate %>
+  </p>
+  <p>
+    <%= f.label :installnum %><br />
+    <%= f.date_select :installnum %>
+  </p>
+  <p>
+    <%= f.label :callbackurl %><br />
+    <%= f.text_field :callbackurl %>
+  </p>
+  <p>
+    <%= f.label :apptype %><br />
+       <%= f.select :apptype, {'iframe'=>'0','html'=>'1'},  :prompt =>'select an app integration type' %>
+  </p>
+  <p>
+    <%= f.label :logourl %><br />
+    <%= f.text_field :logourl %>
+  </p>
+ <p>
+    <%= f.label :language %><br />
+    <%= f.select :language, {'Multi-langage'=>'0','English'=>'1', "Chinese"=>"2", "Japanese"=>"3"},  :prompt =>'select an app language' %>
+ 
+  </p>
+  <p>
+    <%= f.label :category %><br />
+        <%= f.select :category, %w{game apps e-commerce sns media entertainment Technology},  :prompt =>'select an app integration type' %>
+  </p>
+  <p>
+    <%= f.label :tag %><br />
+    <%= f.text_field :tag %>
+	or you can create your own type
+    <%= f.text_field :tag %>
+  </p>
+  <p>
+    
+    <%= f.check_box :free, {1=>"1"} %><%= f.label :free %>
+  </p>
+  <p>
+    <%= f.label :installcharge %><br />
+    <%= f.text_field :installcharge %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @app %> |
+<%= link_to 'Back', apps_path %>
